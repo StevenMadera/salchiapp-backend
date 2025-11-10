@@ -18,6 +18,7 @@ app.use(cors({
     'http://localhost:8100', // Ionic serve
     'capacitor://localhost', // App móvil (Capacitor)
     'http://localhost',      // Emulador
+    'https://localhost',     // App móvil (https)
     'https://salchiapp-backend.onrender.com' // (opcional, si tu frontend está en Render)
     // Agrega aquí el dominio de tu app móvil si la publicas en web
   ],
