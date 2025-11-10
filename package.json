@@ -8,12 +8,13 @@
     "build": "tsc",
     "start": "node dist/index.js",
     "test": "jest --config jest.config.js",
-  "postbuild": "npx cpx \"src/services/paypalClient.js\" dist/services/"
+    "postbuild": "npx cpx \"src/services/paypalClient.js\" dist/services/"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@paypal/checkout-server-sdk": "^1.0.3",
     "@supabase/supabase-js": "^2.79.0",
     "axios": "^1.13.2",
     "bcryptjs": "^3.0.3",
