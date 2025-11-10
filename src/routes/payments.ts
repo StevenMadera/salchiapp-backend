@@ -1,5 +1,6 @@
 import express, { Request, Response } from 'express';
 const router = express.Router();
+// @ts-ignore
 import { client } from '../services/paypalClient';
 import Order from '../models/Order';
 
