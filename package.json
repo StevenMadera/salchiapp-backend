@@ -24,6 +24,9 @@
     "jsonwebtoken": "^9.0.2",
     "mongoose": "^8.19.3"
   },
+  "engines": {
+    "node": "20.x"
+  },
   "devDependencies": {
     "@types/bcryptjs": "^2.4.6",
     "@types/cors": "^2.8.19",
