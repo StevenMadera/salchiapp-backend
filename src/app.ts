@@ -13,7 +13,16 @@ const paymentsRoutes = require('./routes/payments');
 dotenv.config();
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:8100', // Ionic serve
+    'capacitor://localhost', // App móvil (Capacitor)
+    'http://localhost',      // Emulador
+    'https://salchiapp-backend.onrender.com' // (opcional, si tu frontend está en Render)
+    // Agrega aquí el dominio de tu app móvil si la publicas en web
+  ],
+  credentials: true
+}));
 app.use(express.json());
 
 
